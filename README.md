@@ -3,8 +3,10 @@ This contains files for Project 2 and the Final Project of Math 300.
 
 No AI tools were used.
 
-Who did what: Carter Mitchell and Sydney Spacek worked on this project. Carter Mitchell did more of the code (LIST INFO), Sydney Spacek did more of the writing (LIST INFO).
+Who Coded What:
+- Carter Mitchell did Project 2 parts 1 through 3 with code implementation of a continued fraction evaluator, five constants, and five functions.
+- Sydney Spacek did Project 2 parts 4 through 6 with (INFO).
 
-Who did what coding: Carter Mitchell did prompts 1, 2, and 3 of Project 2, Sydney Spacek did prompts 1, 2, and 3 of Project 2.
-
-Who did what data presentation: Carter Mitchell did data plots, Sydney Spacek did tables.
+Who Displayed What:
+- Carter Mitchell did MatPlotLib data plots
+- Sydney Spacek did tables of data and expressions
