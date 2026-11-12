@@ -6,6 +6,7 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{xcolor}
+\usepackage{makecell}
 
 
 \title{Continued Fractions for Constants and Functions}
@@ -19,23 +20,125 @@
 
 \subsection*{Methods}
 
+We used the generalized continued fraction definition
+\begin{equation}
+    b_0+\dfrac{a_1}{b_1+\dfrac{a_2}{b_2+\dfrac{a_3}{b_3+\dots}}}
+\end{equation}
+to combine results from various sources of constants and functions expressed in a generalized fraction form. The computation was determined for a depth $N$ that computed the backward recurrence method from the bottom fraction $F_N = \dfrac{a_N}{b_N}$ up to the top and total fraction $F_0 = b_0+F_1$ where
+\begin{equation*}
+    F_i = \dfrac{a_{i}}{b_{i}+F_{i+1}} \text{ for } i\in\{1,...,N\}
+\end{equation*}
+and $F_{N+1}=0$. All constants, functions, and rules for $a_i$ and $b_i$ including their respective source references can be found in Table \ref{tab:generalized_fraction_table} of Appendix A.
+
 \subsection*{Results}
 
-The constants and functions used are listed below:
-\begin{itemize}
-    \item First constant: $\frac{\pi}{4}$.\cite{first_constant:wikipedia}
-    \item Second constant: $e$.\cite{second_constant:blog}
-    \item Third constant: $\frac{30}{\pi^{2}}$.\cite{third_constant:ramanujanmachine}
-    \item Fourth constant: $\frac{1}{2G}$, for Catalan's constant $G$.\cite{fourth_constant:ramanujanmachine}
-    \item Fifth constant: $\frac{1}{1-\ln{2}}$.\cite{fifth_constant:ramanujanmachine}
-    \item First function: $e^{x}$.\cite{first_function:wikipedia}
-    \item Second function: $\sin{x}$.\cite{second_function:wikipedia}
-    \item Third function: $\sinh{x}$.\cite{third_function:wikipedia}
-    \item Fourth function: $\tan{x}$.\cite{fourth_function:blog}
-    \item Fifth function: $\tanh{x}$.\cite{fifth_function:wikipedia}
-\end{itemize}
-
+\newpage
 \bibliographystyle{unsrt}
 \bibliography{ReportBibliography}
+
+\newpage
+\begin{center}
+    \subsection*{Appendix A}{\large}
+\end{center}
+
+All constants, functions, and rules for $a_i$ and $b_i$ including their respective source references can be found in Table \ref{tab:generalized_fraction_table}.
+
+% Add vertical space to each row
+\setcellgapes{3pt}
+\makegapedcells
+
+\begin{table}[h!]
+\centering
+% resize box used inside table object to center the tabular object
+\resizebox{\textwidth}{!}{%
+    \begin{tabular}{c|c|c}
+    
+    Constant or Function & $a_i$ & $b_i$ \\
+
+    % First Constant
+    \hline
+    $\dfrac{\pi}{4}$ \cite{first_constant:wikipedia} & $(2i-3)^2$ & $\begin{cases}
+        0, i=0 \\
+        1, i = 1 \\
+        2, i\notin\{0,1\}
+    \end{cases}$ \\
+
+    % Second Constant
+    \hline
+    $e$ \cite{second_constant:blog} & $1$ & $\begin{cases}
+        2, i=0 \\
+        \tfrac{2i+1}{3}, i\equiv2\pmod{3} \\
+        1, \text{otherwise}
+    \end{cases}$ \\
+
+    % Third Constant
+    \hline
+    $\dfrac{30}{\pi^{2}}$ \cite{third_constant:ramanujanmachine} & $i^4$ & $11i^2+11i+3$ \\
+
+    % Fourth Constant
+    \hline
+    $\dfrac{1}{2G}$ for Catalan's constant $G$ \cite{fourth_constant:ramanujanmachine} & $-2i^4$ & $3i^2+3i+1$ \\
+
+    % Fifth Constant
+    \hline
+    $\dfrac{1}{1-\ln{2}}$ \cite{fifth_constant:ramanujanmachine} & $-2i^2(i+1)^2$ & $3i^2+7i+4$ \\
+
+    % First Function
+    \hline
+    $e^{x}$ \cite{first_function:wikipedia} & $\begin{cases}
+        1,i=1 \\
+        \tfrac{-x}{i-1},i\ne1
+    \end{cases}$ & $\begin{cases}
+        0,i=0 \\
+        1,i=1 \\
+        1+\tfrac{x}{i-1},i\notin\{0,1\}
+    \end{cases}$ \\
+
+    % Second Function
+    \hline
+    $\sin{x}$ \cite{second_function:wikipedia} & $\begin{cases}
+        x,i=1 \\
+        x^2,i=2 \\
+        (2i-4)(2i-3)x^2,i\notin\{1,2\}
+    \end{cases}$ & $\begin{cases}
+        0,i=0 \\
+        1,i=1 \\
+        (2i-2)(2i-1)-x^2,i\notin\{0,1\}
+    \end{cases}$ \\
+
+    % Third Function
+    \hline
+    $\sinh{x}$ \cite{third_function:wikipedia} & $\begin{cases}
+        x,i=1 \\
+        -x^2,i=2 \\
+        (4-2i)(2i-3)x^2, i\notin\{1,2\}
+    \end{cases}$ & $\begin{cases}
+        0,i=0 \\
+        1,i=1 \\
+        (2i-2)(2i-1)+x^2,i\notin\{0,1\}
+    \end{cases}$ \\
+
+    % Fourth Function
+    \hline
+    $\tan{x}$ \cite{fourth_function:blog} & $\begin{cases}
+        x,i=1 \\
+        -x^2,i\ne1
+    \end{cases}$ & $\begin{cases}
+        0,i=0 \\
+        2i-1,i\ne0
+    \end{cases}$ \\
+
+    % Fifth Function
+    \hline
+    $\tanh{x}$ \cite{fifth_function:wikipedia} & $1$ & $\begin{cases}
+        0,i=0 \\
+        \tfrac{2i-1}{x},i\ne0
+    \end{cases}$
+    
+    \end{tabular}%
+    }
+    \caption{Generalized Fraction Rules for Constants and Functions}
+    \label{tab:generalized_fraction_table}
+\end{table}
 
 \end{document}
