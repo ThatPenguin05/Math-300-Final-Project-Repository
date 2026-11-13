@@ -8,5 +8,5 @@ Who Coded What:
 - Sydney Spacek: Project 2 parts 4 through 6 with (INFO).
 
 Who Wrote What:
-- Carter Mitchell: Methods and references sections.
+- Carter Mitchell: Methods, references, and appendix sections.
 - Sydney Spacek: Background and results sections.
