@@ -18,7 +18,7 @@ Sydney Spacek: 45%
 
 # Who Wrote What
 Carter Mitchell: 45%
-- Wrote the methods, references, and appendix sections
+- Wrote the contributions, methods, references, and appendix sections
 - Compiled the constant and function rules in the appendix table
 - Wrote the README
 
