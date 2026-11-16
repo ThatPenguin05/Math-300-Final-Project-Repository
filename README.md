@@ -6,13 +6,13 @@ No AI tools were used.
 # Who Coded What
 Carter Mitchell: 55% (Lead)
 - Project 2 parts 1 through 3.
-- Code implementation of a continued fraction evaluator using a backward recurrence method.
+- Code implementation of a backward recurrence continued fraction method.
 - Implemented five constants and five functions.
 - Led the GitHub repository and general file updates.
 
 Sydney Spacek: 45%
 - Project 2 parts 4 through 6.
-- Code implementation of a continued fraction evaluator using a forward recurrence method.
+- Code implementation of a forward recurrence continued fraction method.
 - Implemented figures and tables of data.
 - Supported the GitHub repository with batch updates.
 
