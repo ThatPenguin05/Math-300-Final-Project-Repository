@@ -9,6 +9,7 @@ Carter Mitchell: 60%
 - Code implementation of a continued fraction evaluator using a backward recurrence method
 - Implemented five constants and five functions
 - Led the GitHub repository and general file updates
+
 Sydney Spacek: 40%
 - Project 2 parts 4 through 6
 - Code implementation of a continued fraction evaluator using a forward recurrence method
