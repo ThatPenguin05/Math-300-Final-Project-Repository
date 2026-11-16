@@ -4,22 +4,24 @@ This contains files for Project 2 and the Final Project of Math 300.
 No AI tools were used.
 
 # Who Coded What
-Carter Mitchell: 60% (Lead)
+Carter Mitchell: 55% (Lead)
 - Project 2 parts 1 through 3
 - Code implementation of a continued fraction evaluator using a backward recurrence method
 - Implemented five constants and five functions
 - Led the GitHub repository and general file updates
 
-Sydney Spacek: 40%
+Sydney Spacek: 45%
 - Project 2 parts 4 through 6
 - Code implementation of a continued fraction evaluator using a forward recurrence method
 - Implemented figures and tables of data
 - Supported the GitHub repository with batch updates
 
 # Who Wrote What
-Carter Mitchell: 40%
+Carter Mitchell: 45%
 - Wrote the methods, references, and appendix sections
 - Compiled the constant and function rules in the appendix table
-Sydney Spacek: 60% (Lead)
+- Wrote the README
+
+Sydney Spacek: 55% (Lead)
 - Background and results sections
 - Compiled the figures and tables of data
