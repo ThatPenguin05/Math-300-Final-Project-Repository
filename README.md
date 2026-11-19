@@ -1,9 +1,11 @@
 # Math-300-Final-Project-Repository
 This contains files for Project 2 and the Final Project of Math 300.
 
+# AI Disclosure
 No AI tools were used.
 
-# Who Coded What
+# Author Contributions
+**Who Coded What:**
 Carter Mitchell: 55% (Lead)
 - Project 2 parts 1 through 3.
 - Code implementation of a backward recurrence continued fraction method.
@@ -16,7 +18,7 @@ Sydney Spacek: 45%
 - Implemented figures and tables of data.
 - Supported the GitHub repository with batch updates.
 
-# Who Wrote What
+**Who Wrote What**
 Carter Mitchell: 45%
 - Wrote the contributions, methods, references, and appendix sections.
 - Compiled the constant and function rules in the appendix table.
